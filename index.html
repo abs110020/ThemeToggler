@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Site Theming</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/headshot.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./settings.js" type="module"></script>
+  </head>
+  <body>
+    <div class="banner" data-bkg="accent2"></div>
+    <div class="wrapper">
+      <header class="hero">
+        <div data-align="right">
+          <p data-fs="2xl">👋</p>
+          <div>
+            <p>I write about <span data-color="primary">web dev</span></p>
+            <p data-color="accent2">AI</p>
+            <p data-color="accent1">tech</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/headshot.png"
+            alt="Asmi"
+            class="headshot"
+            width="280px"
+          />
+          <h1 data-color="primary">Hi, I’m Asmi</h1>
+          <p>Look below to toggle themes</p>
+        </div>
+      </header>
+      <main>
+        <img src="/wave1.png" alt="" class="wave" />
+        <aside class="container" aria-label="Theme Settings">
+          <div class="settings-wrapper">
+            <h2>Toggle</h2>
+            <div class="settings">
+              <div class="stack">
+                <div class="switch-wrapper">
+                  <input type="checkbox" id="sound" name="sound"/>
+                  <label for="sound" class="switch-label">Sound Toggle</label>
+                  <div class="switch">
+                    <span>Sound On</span>
+                    <div class="thumb"></div>
+                    <span>Sound Off</span>
+                  </div>
+                </div>
+                <div class="switch-wrapper">
+                  <input type="checkbox" id="motion" name="motion"/>
+                  <label for="motion" class="switch-label">Motion Toggle</label>
+                  <div class="switch">
+                    <span>Motion On</span>
+                    <div class="thumb"></div>
+                    <span>Motion Off</span>
+                  </div>
+                </div>
+                <div class="switch-wrapper">
+                  <input type="checkbox" id="round" name="round"/>
+                  <label for="round" class="switch-label">Round Toggle</label>
+                  <div class="switch">
+                    <span>Squared</span>
+                    <div class="thumb"></div>
+                    <span>Rounded</span>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="stack">
+                <fieldset class="radio-wrapper">
+                  <legend>Website Theme</legend>
+                  <div class="radio">
+                    <input type = "radio" name = "theme" id="light"/>
+                    <div class="check"></div>
+                    <label for="light">Light</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "theme" id="dark"/>
+                    <div class="check"></div>
+                    <label for="dark">Dark</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "theme" id="sunny"/>
+                    <div class="check"></div>
+                    <label for="sunny">Sunny</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "theme" id="emerald"/>
+                    <div class="check"></div>
+                    <label for="emerald">Emerald</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "theme" id="system"/>
+                    <div class="check"></div>
+                    <label for="system">System Default</label>
+                  </div>
+                </fieldset>
+  
+                <fieldset class="radio-wrapper">
+                  <legend>Website Accent</legend>
+                  <div class="radio">
+                    <input type = "radio" name = "customColor" id="primary" checked="checked" />
+                    <div class="check"></div>
+                    <label for="primary">Option 1</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "customColor" id="accent1"/>
+                    <div class="check"></div>
+                    <label for="accent1">Option 2</label>
+                  </div>
+                  <div class="radio">
+                    <input type = "radio" name = "customColor" id="accent2"/>
+                    <div class="check"></div>
+                    <label for="accent2">Option 3</label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+         </aside>
+        <section aria-labelledby="recent-posts">
+          <h2 class="sr-only" id="recent-posts">More about me</h2>
+          <div class="card-wrapper">
+            <article class="card">
+              <h3 data-color="primary">Portfolio</h3>
+              <div>
+                <img src="/notepad.png" alt="Design sketches" />
+                <p>
+                  I'm a front-end software engineer experienced with both web and mobile, from single-page apps to complex platforms to intricate web platforms.
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 data-color="primary">Github</h3>
+              <div>
+                <img src="/github.png" alt="github" />
+                <p>
+                  You'll see projects that highlight my skills in modern web technologies.
+                  Each repo demonstrates my dedication to clean, user-friendly designs.
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 data-color="primary">Ask-Better.com</h3>
+              <div>
+                <img src="/blog.png" alt="ask-better" />
+                <p>
+                  As we navigate this AI-driven era and embrace the opportunities it brings, our ability to ask thoughtful and insightful questions will set us apart.
+                  
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section aria-labelledby="newsletter-signup" class="cta-wrapper">
+          <div class="cta container">
+            <div>
+              <h2 id="newsletter-signup">New Posts to Your Inbox</h2>
+              <p>
+                Stay in the loop with my blog by subscribing to my email
+                newsletter. Never miss a post and get exclusive content and
+                updates. Join now! Cancel at anytime.
+              </p>
+            </div>
+            <form>
+              <div>
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  autocomplete="email"
+                  placeholder="john@email.com"
+                />
+              </div>
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </section>
+
+      </main>
+    </div>
+    <div class="banner" data-bkg="primary"></div>
+    <audio src ="/check.mp3" id="audio-check" preload="none"></audio>
+    <audio src ="/toggle.mp3" id="audio-toggle" preload="none"></audio>
+  </body>
+</html>
