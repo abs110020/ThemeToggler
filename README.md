@@ -3,6 +3,13 @@ ThemeToggler is a dynamic website that offers users the ability to personalize t
 Technology used :
 JS, CSS, HTML only
 
+Toggle options:
+Change theme of website
+Custom Accents
+Squared or rounded borders
+Sound options
+Motion on or off
+
 Dynamic Previews: See changes in real-time. As you adjust themes and accents, the on-screen preview instantly reflects your choices, ensuring what you see is what you get.
 
 Responsive Design: Test how your chosen theme looks across various devices - from desktop monitors to mobile screens, ensuring a consistent user experience everywhere.
